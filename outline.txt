@@ -1,0 +1,23 @@
+
+    DRONEHOOK
+    a novel package retrieval system
+
+                 XXXXXXXXXXX
+-----------------XXXXXXXXXXX-------------
+progress bar     XXXXXXXXXXX
+                 XXXXXXXXXXX
+   XXXX Week 3                  ---------
+   XXXX Quick blurb             About us
+   XXXX Read more >
+                                Dronehook
+   XXXX Week 2                  is a...
+   XXXX
+   XXXX                         ---------
+
+   XXXX Week 1
+   XXXX
+   XXXX
+
+-----------------------------------------
+
+footer

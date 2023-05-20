@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Work+Sans:wght@400;800&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* HERO */
+.hero {
+    background-image: url("images/jumbotron-compressed.JPG");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+
+    width: 100vw;
+    padding-bottom: 50%;
+    position: relative;
+    display: flex;
+}
+
+.hero-content {
+    position: absolute;
+    padding: 1vw 2vw;
+    top: 50%;
+    left: 3%;
+
+    color: #07393C;
+}
+
+.hero h1 {
+    font-size: 8vw;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 3vw; 
+    font-family: "Roboto Mono", Courier, monospace;
+    font-weight: 300;
+    margin-top: -2vw;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 3vw;
+    font-size: max(0.6rem, 1.3vw);
+}
+
+.hero-buttons a {
+    padding: 0.8vw 1.6vw;
+    display: inline-block;
+    margin-right: 1rem;
+    border: 2px solid #07393C;
+    
+
+    text-transform: uppercase;
+    color: #F0EDEE;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+}
+
+.hero-buttons .progress-button {
+    background-color: rgba(200, 200, 200, 0.2);
+    backdrop-filter: blur(2px);
+    color: #07393C;
+}
+
+.support-button {
+    background-color: #07393C;
+}
+
+.support-button:hover {
+    background-color: rgba(7, 57, 60, 0.6);
+}
+
+.progress-button:hover {
+    background-color: rgba(7, 57, 60, 0.2);
+}
+
+.hero-buttons a:hover {
+    backdrop-filter: blur(2px);
+}
+
+/* ABOUT */
+.about {
+    background-color: #fff;
+    padding-top: 5vw;
+}
+
+.about-dronehook {
+    padding: 1rem;
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    /*background-color: #B6DDE2;
+    box-shadow: 0 5px 10px rgba(100,100,100,0.5); */
+}
+
+.about-img {
+    background-image: url("./images/plane-rear-compressed.jpg");
+    background-size: cover;
+    background-position-x: center;
+    height: 25vw;
+    width: 25vw;
+    flex-shrink: 0;
+    margin-right: 2vw;
+    box-shadow: 0 5px 10px rgba(100,100,100,0.7);
+    
+}
+
+.title {
+    font-size: 4vw;
+    font-family: "Roboto Mono", Courier, monospace;
+    font-weight: 400;
+    color: #07393C;
+    position: relative;
+    z-index: 1;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    background-color: #DBF4FA;
+    width: 20vw;
+    height: 2vw;
+    rotate: -5deg;
+    z-index: -1;
+    top: 2vw;
+    left: 2vw;
+}
+
+.about-dronehook p {
+    font-size: max(0.8rem, 1.6vw);
+    font-weight: 400;
+    line-height: max(0.8rem, 2.5vw);
+    margin-top: 2vw;
+}
+
+.about-us .title {
+    margin-left: 5vw;
+    margin-top: 10vw;
+}
+
+.about-us-table {
+    display: grid;
+    margin: 5vw auto;
+    width: 60vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-person-img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+
+        border-radius: 100rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-person-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-person-container {
+    width: 20vw;
+    box-shadow: 0px 5px 10px rgba(100,100,100,0.3);
+    padding: 1vw 2vw;
+    background-color: #DBF4FA;
+    margin-top: 1vw;
+}
+
+.about-person-text h4 {
+    background-color: #B6DDE2;
+    width: 20vw;
+    margin-top: -1vw;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgba(100,100,100,0.3);
+
+
+    color: #07393C;
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Roboto Mono", Courier, monospace;
+}
+
+.about-person-text p {
+    color: #07393C;
+    font-size: 1.2vw;
+}
+
+    /*
+    background-color: rgba(90, 136, 92, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    https://coolors.co/d2f898-f6f930-07393c-b6dde2-dbf4fa
+    */
+
+
+/* SUPPORT.HTML */
+
+.banner {
+    background-image: url("./images/Solder-Clamp-ESC-Motor-compressed.JPG");
+    background-size: cover;
+    background-position-y: -80px;
+    width: 100vw;
+    height: 20vw;
+    position: relative;
+
+    font-size: 3vw;
+    line-height: 20vw;
+}
+
+.return {
+    position: absolute;
+    top: -7vw;
+    left: 2vw;
+    z-index: 2;
+
+    font-size: 2vw;
+    color: #DBF4FA;
+}
+
+.banner h1 {
+    padding-left: 5vw;
+    color: #DBF4FA;
+    background-color: rgba(90, 136, 92, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.main {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-grid {
+    margin: 5vw auto;
+    width: 30vw;
+}
+
+.main-grid ul {
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    margin-top: 2vw;
+}
+
+.title2 {
+    font-size: 2.2vw;
+    font-family: "Roboto Mono", Courier, monospace;
+    color: #07393C;
+}
+
+.link:link,
+.link:visited {
+    color: #AFB206;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    text-decoration: underline;
+}
+
+.main-grid h2 {
+    text-align: center;
+}
+
+.table {
+    width: 60vw;
+    margin: 2vw auto;
+}
+
+.table th {
+    font-family: "Roboto Mono", Courier, monospace;
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    background-color: #07393C;
+    color: #DBF4FA;
+    text-transform: uppercase;
+}
+
+.table td {
+    font-size: 1vw;
+    padding: 1vw 2vw;
+}
+
+.table tr td:first-child {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 700;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #B6DDE2;
+}
+
+.table tr:nth-child(even) {
+    background-color: #DBF4FA;
+}
+
+/* FOOTER */
+footer {
+    background-color: #07393C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer {
+    width: 22vw;
+    padding: 2vw 4vw;
+    
+    color: #B6DDE2;
+}
+
+.footer h4 a {
+    font-size: 2vw;
+    color: #DBF4FA;
+    text-decoration: none;
+}
+
+.footer p, .footer ul {
+    font-size: 1vw;
+}
+
+.footer li {
+    list-style: none;
+    padding-top: 0.5vw;
+}
