@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Dronehook | Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="return" href="index.html">< Go back</a>
+    <div class="progress-header">
+        <h1>Keep up with our progress!</h1>
+    </div>
+    <div class="progress-entry">
+        <div class="progress-info">
+            <h3>Dronehook Update 1</h3>
+            <p>26 May 2023</p>
+        </div>
+        <div class="progress-update">
+            <div class="progress-update-container">
+                <h3 class="progress-title">Software</h3>
+                <p>OpenCV for C++ was first downloaded and compiled in the beginning of the week, but upon further examination it was determined that C++ would take too long to learn and program efficiently despite prior C experience. The code will now be written in Python despite code speed concerns and the development process is already progressing much faster. The current obstacle is getting a PiCam v2 as our PiCam v1 does not work with the Jetson. After finding an appropriate camera, the next step is uploading code to the Jetson to determine what kind of framerates can be expected. Current functional software written can recognize a chessboard pattern and use it to calculate camera distortion and flatten the image, which will be necessary for accurate pose estimation.
+                </p>
+            </div>
+            <div class="progress-update-container">
+                <h3 class="progress-title">Modeling</h3>
+                <p>Initial 3D models were created in CAD for the motor and onboard electronics mounts. Preliminary designs were also created for the catch mechanism.
+                </p>
+            </div>
+            <div class="progress-update-container">
+                <h3 class="progress-title">Onboard electronics</h3>
+                <p>We did some research on how a fixed-wing drone is built in order to shed some light on the process as a whole. The hardware layout is now much clearer and a diagram (included on the Summer Plan) was created. There is some work to do regarding pinout diagrams for connecting the GPS and Jetson to the Pixhawk.
+                </p>
+            </div>
+            <div class="progress-update-container">
+                <h3 class="progress-title">Other</h3>
+                <p>One of the major obstacles this week was the lack of 3D printing capabilities. The 3D printer in the lab was not passing XYZ calibration and access to other 3D printers in the building was denied. With a small wire and some lubricant, we cleaned the nozzle and fixed XYZ movement.
+                    <br />
+                    Another major obstacle was the lack of funding. Seven total sponsorship emails were sent out on Wednesday and another ~$1100 was raised, putting us only $400 away from our fundraising goal. We are confident in our ability to complete it.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer footer-left">
+            <h4><a href="./index.html">Dronehook</a></h4>
+            <p>University of Notre Dame</p>
+            <p>In partnership with NASA</p>
+        </div>
+        <div class="footer footer-center">
+            <ul>
+                <li><a class="link" href="./support.html">Support us</a></li>
+                <li><a class="link" href="./progress.html">See our progress</a></li>
+                <li><a class="link" target ="_blank" href="http://seniordesign.ee.nd.edu/2022/Design%20Teams/DroneHook/top_page.html">Last year's documentation</a></li>
+            </ul>
+        </div>
+        <div class="footer footer-right">
+            <p>Website built by Zach</p>
+        </div>
+    </footer>
+</body>
+</html>
