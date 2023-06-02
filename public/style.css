@@ -177,12 +177,103 @@ body {
     font-size: 2vw;
     font-family: "Roboto Mono", Courier, monospace;
     border-bottom: 2px solid #07393C;
-    padding: 2vw;
+    padding: 3vw;
+    position: relative;
+}
+
+.step {
+    position: relative;
 }
 
 .step p {
     font-size: 1.4vw;
     padding: 2vw 0.5vw;
+    margin-top: 1vw;
+}
+
+.step-takeoff::after {
+    content: url('icons/plane-icon.svg');
+    position: absolute;
+
+    height: 2vw;
+    width: 2vw;
+    padding: 1vw;
+    background-color: #F0EDEE;
+    border-radius: 100vw;
+    border: 2px solid #07393C;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.step-navigation::after {
+    content: url('icons/road-route-map-icon.svg');
+    position: absolute;
+
+    height: 2vw;
+    width: 2vw;
+    padding: 1vw;
+    background-color: #F0EDEE;
+    border-radius: 100vw;
+    border: 2px solid #07393C;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.step-pickup::after {
+    content: url('icons/cube-icon.svg');
+    position: absolute;
+
+    height: 2vw;
+    width: 2vw;
+    padding: 1vw;
+    background-color: #F0EDEE;
+    border-radius: 100vw;
+    border: 2px solid #07393C;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.step-delivery::after {
+    content: url('icons/location-pin-icon.svg');
+    position: absolute;
+
+    height: 2vw;
+    width: 2vw;
+    padding: 1vw;
+    background-color: #F0EDEE;
+    border-radius: 100vw;
+    border: 2px solid #07393C;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.step-repeat::after {
+    content: url('icons/circle-arrow-icon.svg');
+    position: absolute;
+
+    height: 2vw;
+    width: 2vw;
+    padding: 1vw;
+    background-color: #F0EDEE;
+    border-radius: 100vw;
+    border: 2px solid #07393C;
+
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 }
 
 .howitworks-container {
