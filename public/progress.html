@@ -4,9 +4,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a class="return" href="index.html">< Go back</a>
+    <nav>
+        <a class="nav-logo" href="./index.html">Dronehook</p>
+        <div class="nav-links">
+            <a class="link" href="./support.html">Crowdfunding</a>
+            <a class="link" href="./gallery.html">Gallery</a>
+            <a class="link" href="./progress.html">Documentation</a>
+        </div>
+    </nav>
     <div class="progress-header">
         <h1>Keep up with our progress!</h1>
+    </div>
+
+    <div class="progress-entry">
+        <div class="progress-info">
+            <h3>Dronehook Update 3</h3>
+            <p>16 Jun 2023</p>
+        </div>
+        <div class="progress-update">
+            <div class="progress-container">
+                <h3>Plane Assembly</h3>
+                <p>The plane is finally almost completely assembled. We've encountered a lot of unexpected difficulties with parts of the system that we expected would work out-of-the-box but in fact required a very significant amount of time for troubleshooting just to achieve basic functionality. We spent an entire day pairing the transmitter and receiver because they both required firmware updates and the required programs were available from several different sources that each had their own set of instructions to achieve the same goal. We spent another entire day troubleshooting the servos, which were not responding to transmitter input. We discovered that the servos required a separate power input and also wouldn't function without the GPS, which we hadn't yet installed because it was still shipping. Now it appears that our ESC's are receiving bad input from the flight controller. This problem likely requires a firmware update on the ESC's but there are ~10 different possible protocols/firmwares they could use and there isn't readily available documentation as to which protocol/firmware our ESC can use, or if it can use any of them. We also tried to calibrate the ESC's, thinking that would fix the issue, but ESC calibration through Ardupilot is only available in the Copter firmware (as a reminder, we are building a plane, so we are using Plane firmware), despite the fact that the hardware is all the same. Once the ESC's function properly, we need to troubleshoot some strange sounds and an apparent limited range of motion in the servos, but then the plane is ready for flight.</p>
+            </div>
+            <div class="progress-container">
+                <h3>Software</h3>
+                <p>We decided to switch to ArUco markers for the camera system. Checkerboard recognition takes too long and greatly decreases framerate when no pattern is visible within the frame, whereas ArUco recognition provides a consistently high framerate.</p>
+            </div>
+            <div class="progress-container">
+                <h3>Our Stuff</h3>
+                <p>Our first order of supplies came in this week. This was important because we needed a camera that was compatible with the Jetson Nano so we can start development on the Jetson itself rather than proof-of-concept code on our laptops. Preparing the Jetson to run the code has proved rather difficult, as there are a lot of interconnected libraries that need to work together, and in order to do so, they need to be on compatible versions. At the time of writing we are recompiling OpenCV (a very time-consuming process) to version 4.7.0 so it has built-in gstreamer support. gstreamer allows our Python code to grab data from the camera, as opposed to camera data being sent directly to the screen.</p>
+            </div>
+        </div>
     </div>
 
     <div class="progress-entry">
@@ -15,18 +43,18 @@
             <p>2 Jun 2023</p>
         </div>
         <div class="progress-update">
-            <div class="progress-update-container">
-                <h3 class="progress-title">Modeling</h3>
+            <div class="progress-container">
+                <h3>Modeling</h3>
                 <p>We've now finished up the first iteration of our grab mechanism. We think it is a simple and robust mechanism but we also have some concerns about its longevity and ability to survive the high-vibration environment within the plane.
                 <br />
                 Our motor mounts are now fully 3D printed, perfectly sized, and ready to be installed onto the plane. They will hold the motors in place in the plane's sytrofoam housing.</p>
             </div>
-            <div class="progress-update-container">
-                <h3 class="progress-title">Software</h3>
+            <div class="progress-container">
+                <h3>Software</h3>
                 <p>Software got off to a productive start this week with the first successful image recognition tests and the beginning of camera testing to determine how far away the images could be recognized, in addition to creating some reusable Python code to test different types of image preprocessing before trying to recognize the checkerboard pattern. Issues arose when trying to install Ardupilot SITL for simulating the aircraft, and much of the week was spent resolving operating systems and install issues. With that out of the way, we have identified a new camera with software-controlled optical zoom capabilities which will be great for increasing the range of the image recognition without purchasing such an expensive and high-quality camera that the photos take too long to process.</p>
             </div>
-            <div class="progress-update-container">
-                <h3 class="progress-title">Crowdfunding</h3>
+            <div class="progress-container">
+                <h3>Crowdfunding</h3>
                 <p>100% of our crowdfunding goal has been reached! We are looking forward to putting in the first orders soon to start building. There are only a couple of pieces of hardware left that we need before we can get flying, and we hope those will be in soon. Thank you to all of your continued support!</p>
             </div>
         </div>
@@ -38,22 +66,22 @@
             <p>26 May 2023</p>
         </div>
         <div class="progress-update">
-            <div class="progress-update-container">
+            <div class="progress-container">
                 <h3 class="progress-title">Software</h3>
                 <p>OpenCV for C++ was first downloaded and compiled in the beginning of the week, but upon further examination it was determined that C++ would take too long to learn and program efficiently despite prior C experience. The code will now be written in Python despite code speed concerns and the development process is already progressing much faster. The current obstacle is getting a PiCam v2 as our PiCam v1 does not work with the Jetson. After finding an appropriate camera, the next step is uploading code to the Jetson to determine what kind of framerates can be expected. Current functional software written can recognize a chessboard pattern and use it to calculate camera distortion and flatten the image, which will be necessary for accurate pose estimation.
                 </p>
             </div>
-            <div class="progress-update-container">
+            <div class="progress-container">
                 <h3 class="progress-title">Modeling</h3>
                 <p>Initial 3D models were created in CAD for the motor and onboard electronics mounts. Preliminary designs were also created for the catch mechanism.
                 </p>
             </div>
-            <div class="progress-update-container">
+            <div class="progress-container">
                 <h3 class="progress-title">Onboard electronics</h3>
                 <p>We did some research on how a fixed-wing drone is built in order to shed some light on the process as a whole. The hardware layout is now much clearer and a diagram (included on the Summer Plan) was created. There is some work to do regarding pinout diagrams for connecting the GPS and Jetson to the Pixhawk.
                 </p>
             </div>
-            <div class="progress-update-container">
+            <div class="progress-container">
                 <h3 class="progress-title">Other</h3>
                 <p>One of the major obstacles this week was the lack of 3D printing capabilities. The 3D printer in the lab was not passing XYZ calibration and access to other 3D printers in the building was denied. With a small wire and some lubricant, we cleaned the nozzle and fixed XYZ movement.
                     <br />

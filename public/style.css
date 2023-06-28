@@ -104,6 +104,35 @@ body {
     backdrop-filter: blur(2px);
 }
 
+
+/* NAV */
+nav {
+    width: 100%;
+    background-color: #07393C;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 2vw;
+
+    z-index: 5;
+    top: 0;
+    position: sticky;
+}
+
+.nav-logo {
+    color: #B6DDE2;
+    text-decoration: none;
+}
+
+.nav-links {
+    color: #AFB206;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    font-size: 1vw;
+    align-items: center;
+}
+
 /* ABOUT */
 .about {
     background-color: #fff;
@@ -417,6 +446,7 @@ body {
 .link:hover,
 .link:focus {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .main-grid h2 {
@@ -503,7 +533,7 @@ footer {
 .progress-entry {
     width: 80vw;
     margin: 2vw auto;
-    box-shadow: 2px 2px 2px solid darkslategray;
+    /*box-shadow: 2px 2px 2px solid darkslategray;*/
     border-radius: 5px;
     padding: 1vw;
 }
@@ -515,29 +545,30 @@ footer {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    background-color: #07393C;
-    border-radius: 5px 5px 0 0;
-    color: #DBF4FA;
+    /*background-color: #07393C;
+    border-radius: 5px 5px 0 0;*/
+    border-bottom: 2px solid #07393C;
+    color: #07393C;
     font-family: "Roboto Mono", Courier, monospace;
 }
 
 .progress-update {
-    background-color: #DBF4FA;
+    /*background-color: #DBF4FA;*/
     border-radius: 0 0 5px 5px;
     padding: 1vw;
     margin-top: 0.2vw;
 }
 
-.progress-title {
+.progress-container h3 {
     font-size: 1.4vw;
     font-family: "Roboto Mono", Courier, monospace;
 }
 
-.progress-update-container {
+.progress-container {
     margin-top: 1vw;
 }
 
-.progress-update-container p {
+.progress-container p {
     font-size: 1.2vw;
-    line-height: 1.5vw;
+    line-height: 1.9vw;
 }
